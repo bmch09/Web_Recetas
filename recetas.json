@@ -1,0 +1,797 @@
+[
+    {
+        "id": "ceviche-clasico",
+        "titulo": "Ceviche",
+        "imagen": "https://images.pexels.com/photos/26586571/pexels-photo-26586571/free-photo-of-pez-pescado-peces-pescados.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "descripcion": "El ceviche es el plato bandera de la gastronomía peruana. Consiste en pescado fresco marinado en limón, con cebolla, ají, cilantro y choclo.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Pescado corvina o lenguado fresco",
+                    "cantidad": "500g"
+                },
+                {
+                    "item": "Limones",
+                    "cantidad": "12-15 unidades"
+                },
+                {
+                    "item": "Cebolla roja",
+                    "cantidad": "1 unidad grande"
+                },
+                {
+                    "item": "Ají limo",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Cilantro fresco",
+                    "cantidad": "1 manojo"
+                },
+                {
+                    "item": "Choclo cocido",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Camote cocido",
+                    "cantidad": "1 unidad grande"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "2 dientes"
+                },
+                {
+                    "item": "Jengibre rallado",
+                    "cantidad": "1 cucharada"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Cortar el pescado en cubos uniformes de aproximadamente 2-3 cm.",
+            "2. Cortar la cebolla en juliana fina y lavarla en agua fría.",
+            "3. Picar finamente el ají limo sin pepas.",
+            "4. Machacar el ajo con sal y jengibre hasta formar una pasta.",
+            "5. En un bowl grande, colocar el pescado y agregar la pasta de ajo y jengibre.",
+            "6. Exprimir los limones sobre el pescado, asegurando que quede cubierto.",
+            "7. Agregar la cebolla, el ají y el cilantro picado.",
+            "8. Sazonar con sal y pimienta al gusto.",
+            "9. Dejar marinar por 3-5 minutos, moviendo suavemente.",
+            "10. Servir inmediatamente acompañado de choclo y camote."
+        ],
+        "valor_nutricional": {
+            "porcion": "250g",
+            "calorias": "180 kcal",
+            "proteinas": "25g",
+            "carbohidratos": "12g",
+            "grasas": "4g",
+            "fibra": "2g",
+            "sodio": "400mg"
+        },
+        "adicional": "Es considerado Patrimonio Cultural de la Nación y se celebra el Día Nacional del Ceviche el 28 de junio.",
+        "tiempo_preparacion": "20 minutos",
+        "dificultad": "Media",
+        "porciones": "4 personas"
+    },
+    {
+        "id": "aji-gallina",
+        "titulo": "Ají de Gallina",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ají_de_gallina.jpg/800px-Ají_de_gallina.jpg",
+        "descripcion": "Delicioso plato cremoso hecho con pollo deshilachado en una salsa de ají amarillo, pan, leche y queso.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Pechuga de pollo",
+                    "cantidad": "1kg"
+                },
+                {
+                    "item": "Ají amarillo",
+                    "cantidad": "4-5 unidades"
+                },
+                {
+                    "item": "Pan de molde",
+                    "cantidad": "4 rebanadas"
+                },
+                {
+                    "item": "Leche evaporada",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "item": "Queso parmesano",
+                    "cantidad": "100g"
+                },
+                {
+                    "item": "Nueces pecanas",
+                    "cantidad": "50g"
+                },
+                {
+                    "item": "Cebolla",
+                    "cantidad": "1 unidad grande"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "4 dientes"
+                },
+                {
+                    "item": "Aceite",
+                    "cantidad": "3 cucharadas"
+                },
+                {
+                    "item": "Papas amarillas",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Huevos",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Aceitunas negras",
+                    "cantidad": "8 unidades"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Cocinar el pollo en agua con sal, cebolla y apio. Reservar el caldo.",
+            "2. Deshilachar el pollo y reservar.",
+            "3. Remojar el pan en leche evaporada.",
+            "4. Licuar los ajíes amarillos sin venas ni pepas.",
+            "5. Sofreír en aceite la cebolla y el ajo picados hasta dorar.",
+            "6. Agregar el ají licuado y cocinar por 5 minutos.",
+            "7. Licuar el pan remojado con las nueces y queso.",
+            "8. Agregar esta mezcla al aderezo y cocinar a fuego lento.",
+            "9. Incorporar el pollo deshilachado y agregar caldo si es necesario.",
+            "10. Cocinar por 10 minutos más hasta obtener la consistencia deseada.",
+            "11. Servir sobre papas cocidas y decorar con huevo duro y aceitunas."
+        ],
+        "valor_nutricional": {
+            "porcion": "300g",
+            "calorias": "450 kcal",
+            "proteinas": "35g",
+            "carbohidratos": "30g",
+            "grasas": "22g",
+            "fibra": "3g",
+            "sodio": "580mg"
+        },
+        "adicional": "Este plato tiene orígenes en la época colonial y es una adaptación de la cocina europea a ingredientes locales.",
+        "tiempo_preparacion": "60 minutos",
+        "dificultad": "Media-Alta",
+        "porciones": "6 personas"
+    },
+    {
+        "id": "causa-rellena",
+        "titulo": "Causa Rellena",
+        "imagen": "https://images.pexels.com/photos/28448388/pexels-photo-28448388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "descripcion": "Pastel frío de papa amarilla prensada relleno de pollo o atún, palta y mayonesa.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Papa amarilla",
+                    "cantidad": "1kg"
+                },
+                {
+                    "item": "Limones",
+                    "cantidad": "3 unidades"
+                },
+                {
+                    "item": "Ají amarillo molido",
+                    "cantidad": "3 cucharadas"
+                },
+                {
+                    "item": "Pechuga de pollo",
+                    "cantidad": "400g"
+                },
+                {
+                    "item": "Paltas",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Mayonesa",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "item": "Choclo desgranado",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "item": "Aceite vegetal",
+                    "cantidad": "3 cucharadas"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Pelar y cocinar las papas amarillas hasta que estén suaves.",
+            "2. Hacer un puré y mezclarlo con ají amarillo, limón, aceite y sal.",
+            "3. Cocinar el pollo, deshilacharlo y mezclarlo con mayonesa.",
+            "4. Cortar las paltas en láminas.",
+            "5. En un molde rectangular, colocar una capa de puré de papa.",
+            "6. Agregar una capa de pollo con mayonesa.",
+            "7. Colocar las láminas de palta.",
+            "8. Cubrir con otra capa de puré de papa.",
+            "9. Refrigerar por al menos 1 hora.",
+            "10. Decorar con mayonesa, aceitunas y huevo duro al servir."
+        ],
+        "valor_nutricional": {
+            "porcion": "250g",
+            "calorias": "380 kcal",
+            "proteinas": "15g",
+            "carbohidratos": "45g",
+            "grasas": "18g",
+            "fibra": "5g",
+            "sodio": "450mg"
+        },
+        "adicional": "Su nombre proviene de la época de la guerra con Chile, donde se vendía 'por la causa' (por la patria).",
+        "tiempo_preparacion": "45 minutos + 1 hora de refrigeración",
+        "dificultad": "Media",
+        "porciones": "6 personas"
+    },
+    {
+        "id": "anticucho",
+        "titulo": "Anticuchos",
+        "imagen": "https://comedera.com/wp-content/uploads/sites/9/2022/03/Anticucho-shutterstock_185287433.jpg?resize=1316,740&quality=80",
+        "descripcion": "Brochetas de corazón de res marinadas en ají panca y especias, asadas a la parrilla.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Corazón de res",
+                    "cantidad": "1kg"
+                },
+                {
+                    "item": "Ají panca molido",
+                    "cantidad": "3 cucharadas"
+                },
+                {
+                    "item": "Ajo molido",
+                    "cantidad": "4 dientes"
+                },
+                {
+                    "item": "Vinagre tinto",
+                    "cantidad": "1/4 taza"
+                },
+                {
+                    "item": "Comino molido",
+                    "cantidad": "1 cucharadita"
+                },
+                {
+                    "item": "Orégano",
+                    "cantidad": "1 cucharadita"
+                },
+                {
+                    "item": "Aceite vegetal",
+                    "cantidad": "1/4 taza"
+                },
+                {
+                    "item": "Palitos de bambú",
+                    "cantidad": "12 unidades"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ],
+            "acompañamiento": [
+                {
+                    "item": "Papas cocidas",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Choclo cocido",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Ají",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Limpiar el corazón retirando grasa y nervios.",
+            "2. Cortar en cubos uniformes de 2-3 cm.",
+            "3. Preparar la marinada mezclando ají panca, ajo, vinagre, comino, orégano, aceite, sal y pimienta.",
+            "4. Marinar los cubos de corazón por al menos 6 horas o toda la noche.",
+            "5. Remojar los palitos de bambú en agua por 30 minutos.",
+            "6. Ensartar los trozos de corazón en los palitos.",
+            "7. Precalentar la parrilla a fuego alto.",
+            "8. Asar los anticuchos, volteándolos cada 2-3 minutos.",
+            "9. Pintar con la marinada mientras se asan.",
+            "10. Servir calientes con papas, choclo y ají."
+        ],
+        "valor_nutricional": {
+            "porcion": "200g",
+            "calorias": "250 kcal",
+            "proteinas": "32g",
+            "carbohidratos": "8g",
+            "grasas": "12g",
+            "fibra": "1g",
+            "sodio": "320mg"
+        },
+        "adicional": "Plato de origen prehispánico que era preparado por los esclavos africanos durante la época colonial.",
+        "tiempo_preparacion": "30 minutos + 6 horas de marinado",
+        "dificultad": "Media",
+        "porciones": "4 personas"
+    },
+    {
+        "id": "rocoto-relleno",
+        "titulo": "Rocoto Relleno",
+        "imagen": "https://www.paulinacocina.net/wp-content/uploads/2024/04/rocoto-relleno-con-pastel-de-papa-Paulina-Cocina-Recetas-Cocina-Recetas-800x450.jpg",
+        "descripcion": "Rocoto (ají picante) relleno de carne molida, queso y especias, típico de Arequipa.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Rocotos grandes",
+                    "cantidad": "6 unidades"
+                },
+                {
+                    "item": "Carne molida",
+                    "cantidad": "500g"
+                },
+                {
+                    "item": "Cebolla",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "4 dientes"
+                },
+                {
+                    "item": "Queso fresco",
+                    "cantidad": "200g"
+                },
+                {
+                    "item": "Maní tostado molido",
+                    "cantidad": "50g"
+                },
+                {
+                    "item": "Leche",
+                    "cantidad": "1/2 taza"
+                },
+                {
+                    "item": "Huevos",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Perejil picado",
+                    "cantidad": "2 cucharadas"
+                },
+                {
+                    "item": "Comino",
+                    "cantidad": "1 cucharadita"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Cortar la tapa de los rocotos y retirar las venas y semillas.",
+            "2. Hervir los rocotos en agua con sal y azúcar (cambiar el agua 3 veces) para reducir el picante.",
+            "3. Preparar el relleno sofriendo cebolla y ajo.",
+            "4. Agregar la carne molida y cocinar.",
+            "5. Añadir maní molido, perejil, comino, sal y pimienta.",
+            "6. Incorporar huevos batidos y leche.",
+            "7. Rellenar los rocotos con la mezcla.",
+            "8. Cubrir con queso rallado.",
+            "9. Hornear a 180°C por 15-20 minutos.",
+            "10. Servir caliente con papas doradas o pastel de papa."
+        ],
+        "valor_nutricional": {
+            "porcion": "1 rocoto relleno",
+            "calorias": "320 kcal",
+            "proteinas": "22g",
+            "carbohidratos": "15g",
+            "grasas": "20g",
+            "fibra": "3g",
+            "sodio": "480mg"
+        },
+        "adicional": "Es un plato emblemático de la gastronomía arequipeña, conocido por su intenso sabor picante.",
+        "tiempo_preparacion": "90 minutos",
+        "dificultad": "Alta",
+        "porciones": "6 personas"
+    },
+    {
+        "id": "papa-huancaina",
+        "titulo": "Papa a la Huancaína",
+        "imagen": "https://www.paulinacocina.net/wp-content/uploads/2024/02/papa-huancaina-Paulina-Cocina-Recetas-Cocina-Recetas-800x450.jpg",
+        "descripcion": "Papas cocidas cubiertas con una cremosa salsa de ají amarillo, queso fresco, galletas y leche.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Papas amarillas",
+                    "cantidad": "1kg"
+                },
+                {
+                    "item": "Ají amarillo",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Queso fresco",
+                    "cantidad": "250g"
+                },
+                {
+                    "item": "Galletas de soda",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Leche evaporada",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "2 dientes"
+                },
+                {
+                    "item": "Cebolla",
+                    "cantidad": "1/2 unidad"
+                },
+                {
+                    "item": "Aceite vegetal",
+                    "cantidad": "1/4 taza"
+                },
+                {
+                    "item": "Lechuga",
+                    "cantidad": "6 hojas"
+                },
+                {
+                    "item": "Huevos",
+                    "cantidad": "3 unidades"
+                },
+                {
+                    "item": "Aceitunas negras",
+                    "cantidad": "12 unidades"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Pelar y cocinar las papas en agua con sal hasta que estén suaves.",
+            "2. Cocer los huevos hasta que estén duros.",
+            "3. Limpiar los ajíes, retirar las venas y semillas.",
+            "4. Sofreír ligeramente el ajo y la cebolla.",
+            "5. En la licuadora, colocar el ají, queso, galletas, leche, ajo y cebolla.",
+            "6. Licuar agregando aceite en hilo hasta obtener una salsa cremosa.",
+            "7. Cortar las papas en rodajas gruesas.",
+            "8. Colocar hojas de lechuga en el plato.",
+            "9. Disponer las papas sobre la lechuga.",
+            "10. Cubrir con la salsa huancaína.",
+            "11. Decorar con huevo duro y aceitunas."
+        ],
+        "valor_nutricional": {
+            "porcion": "250g",
+            "calorias": "380 kcal",
+            "proteinas": "12g",
+            "carbohidratos": "45g",
+            "grasas": "18g",
+            "fibra": "4g",
+            "sodio": "520mg"
+        },
+        "adicional": "El nombre proviene de Huancayo, aunque el plato fue creado en Lima por trabajadores ferroviarios.",
+        "tiempo_preparacion": "45 minutos",
+        "dificultad": "Media",
+        "porciones": "6 personas"
+    },
+    {
+        "id": "chupe-camarones",
+        "titulo": "Chupe de Camarones",
+        "imagen": "https://www.paulinacocina.net/wp-content/uploads/2024/03/chupe-de-camaron-Paulina-Cocina-Recetas-Cocina-Recetas-1-800x450.jpg",
+        "descripcion": "Sopa cremosa con camarones, huevos, papa, choclo y verduras.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Camarones frescos",
+                    "cantidad": "1kg"
+                },
+                {
+                    "item": "Arroz",
+                    "cantidad": "1/2 taza"
+                },
+                {
+                    "item": "Papa amarilla",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Choclo",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Habas frescas",
+                    "cantidad": "200g"
+                },
+                {
+                    "item": "Huevos",
+                    "cantidad": "6 unidades"
+                },
+                {
+                    "item": "Leche evaporada",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "item": "Queso fresco",
+                    "cantidad": "100g"
+                },
+                {
+                    "item": "Ají panca",
+                    "cantidad": "2 cucharadas"
+                },
+                {
+                    "item": "Orégano",
+                    "cantidad": "1 cucharadita"
+                },
+                {
+                    "item": "Ajo molido",
+                    "cantidad": "3 dientes"
+                },
+                {
+                    "item": "Cebolla roja",
+                    "cantidad": "1 unidad"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Pelar y limpiar los camarones, reservando las cabezas.",
+            "2. Hacer un caldo con las cabezas de camarones.",
+            "3. Sofreír cebolla, ajo y ají panca.",
+            "4. Agregar el arroz y cocinar brevemente.",
+            "5. Verter el caldo colado y agregar las papas en cubos.",
+            "6. Añadir el choclo desgranado y las habas.",
+            "7. Cuando las verduras estén casi cocidas, agregar los camarones.",
+            "8. Incorporar la leche y el queso rallado.",
+            "9. Agregar los huevos uno a uno.",
+            "10. Finalizar con orégano y rectificar la sazón."
+        ],
+        "valor_nutricional": {
+            "porcion": "400ml",
+            "calorias": "420 kcal",
+            "proteinas": "35g",
+            "carbohidratos": "38g",
+            "grasas": "16g",
+            "fibra": "4g",
+            "sodio": "680mg"
+        },
+        "adicional": "Es considerado uno de los platos más representativos de la gastronomía arequipeña.",
+        "tiempo_preparacion": "60 minutos",
+        "dificultad": "Alta",
+        "porciones": "6 personas"
+    },
+    {
+        "id": "arroz-pato",
+        "titulo": "Arroz con Pato",
+        "imagen": "https://comedera.com/wp-content/uploads/sites/9/2022/05/Arroz-con-pato-peruano-shutterstock_1846729603.jpg?resize=1316,740&quality=80",
+        "descripcion": "Plato norteño de arroz cocido con cerveza negra y culantro, acompañado de pato en trozos.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Pato entero",
+                    "cantidad": "2kg"
+                },
+                {
+                    "item": "Arroz",
+                    "cantidad": "500g"
+                },
+                {
+                    "item": "Cerveza negra",
+                    "cantidad": "1 botella"
+                },
+                {
+                    "item": "Culantro",
+                    "cantidad": "2 atados"
+                },
+                {
+                    "item": "Ají amarillo",
+                    "cantidad": "3 unidades"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "6 dientes"
+                },
+                {
+                    "item": "Cebolla roja",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Arvejitas",
+                    "cantidad": "200g"
+                },
+                {
+                    "item": "Zanahorias",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Pimiento",
+                    "cantidad": "1 unidad"
+                },
+                {
+                    "item": "Comino",
+                    "cantidad": "1 cucharadita"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Trozar el pato y sazonar con sal, pimienta y comino.",
+            "2. Dorar el pato por todos lados en una olla grande.",
+            "3. Retirar el pato y en la misma olla sofreír cebolla, ajo y ají.",
+            "4. Agregar la cerveza negra y cocinar el pato hasta que esté tierno.",
+            "5. Licuar el culantro con un poco de agua.",
+            "6. Hacer un aderezo con las verduras y el culantro licuado.",
+            "7. Agregar el arroz y tostar brevemente.",
+            "8. Verter el caldo del pato y el resto del culantro.",
+            "9. Cocinar el arroz hasta que esté en su punto.",
+            "10. Incorporar las presas de pato y servir caliente."
+        ],
+        "valor_nutricional": {
+            "porcion": "350g",
+            "calorias": "520 kcal",
+            "proteinas": "32g",
+            "carbohidratos": "45g",
+            "grasas": "25g",
+            "fibra": "3g",
+            "sodio": "580mg"
+        },
+        "adicional": "Es un plato típico de la región de Lambayeque, especialmente popular en Chiclayo.",
+        "tiempo_preparacion": "90 minutos",
+        "dificultad": "Alta",
+        "porciones": "6 personas"
+    },
+    {
+        "id": "tacu-tacu",
+        "titulo": "Tacu Tacu",
+        "imagen": "https://www.infobae.com/resizer/v2/QBQKQPP7MRFHJOSTIVCPC2Q7SU.jpg?auth=9ce5142ad129b4e572471542b3b77bcdd671f5cdf2320e931032cfd07001c6bf&smart=true&width=992&height=850&quality=85",
+        "descripcion": "Plato hecho con arroz y frijoles refritos formando una tortilla, típicamente servido con bistec y huevo frito.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Arroz cocido",
+                    "cantidad": "2 tazas"
+                },
+                {
+                    "item": "Frijoles canarios cocidos",
+                    "cantidad": "2 tazas"
+                },
+                {
+                    "item": "Cebolla roja",
+                    "cantidad": "1 unidad"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "3 dientes"
+                },
+                {
+                    "item": "Ají amarillo",
+                    "cantidad": "1 unidad"
+                },
+                {
+                    "item": "Aceite vegetal",
+                    "cantidad": "4 cucharadas"
+                },
+                {
+                    "item": "Bistec",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Huevos",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Sofreír cebolla, ajo y ají amarillo picados.",
+            "2. Agregar los frijoles y aplastarlos ligeramente.",
+            "3. Incorporar el arroz y mezclar bien.",
+            "4. Sazonar con sal y pimienta al gusto.",
+            "5. Formar tortillas con la mezcla.",
+            "6. Dorar por ambos lados en aceite caliente.",
+            "7. Aparte, cocinar los bistecs a término deseado.",
+            "8. Freír los huevos.",
+            "9. Servir el tacu tacu con bistec y huevo frito encima.",
+            "10. Acompañar con salsa criolla opcional."
+        ],
+        "valor_nutricional": {
+            "porcion": "300g",
+            "calorias": "550 kcal",
+            "proteinas": "28g",
+            "carbohidratos": "65g",
+            "grasas": "22g",
+            "fibra": "8g",
+            "sodio": "480mg"
+        },
+        "adicional": "Es un plato que nació de la cocina criolla como forma de aprovechar las sobras del día anterior.",
+        "tiempo_preparacion": "40 minutos",
+        "dificultad": "Media",
+        "porciones": "4 personas"
+    },
+    {
+        "id": "seco-de-cabrito",
+        "titulo": "Seco de Cabrito",
+        "imagen": "https://comedera.com/wp-content/uploads/sites/9/2022/06/seco-de-cabrito.jpg?resize=1316,740&quality=80",
+        "descripcion": "Plato típico del norte del Perú hecho con carne de cabrito cocinada a fuego lento en una salsa de cilantro, acompañado de yuca o arroz.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Carne de cabrito",
+                    "cantidad": "1 kg"
+                },
+                {
+                    "item": "Cilantro fresco",
+                    "cantidad": "1 taza (licuado)"
+                },
+                {
+                    "item": "Cebolla roja",
+                    "cantidad": "1 unidad grande"
+                },
+                {
+                    "item": "Ajo",
+                    "cantidad": "4 dientes"
+                },
+                {
+                    "item": "Ají amarillo",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Chicha de jora",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "item": "Papas",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Yuca",
+                    "cantidad": "4 unidades (opcional)"
+                },
+                {
+                    "item": "Aceite vegetal",
+                    "cantidad": "4 cucharadas"
+                },
+                {
+                    "item": "Sal y pimienta",
+                    "cantidad": "al gusto"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Sazonar el cabrito con sal, pimienta y ajos triturados. Dejar reposar por 30 minutos.",
+            "2. En una olla, calentar aceite y sofreír la cebolla picada hasta que esté dorada.",
+            "3. Agregar el ají amarillo y el cilantro licuado, cocinar por unos minutos.",
+            "4. Incorporar la carne de cabrito y la chicha de jora. Cocinar a fuego lento hasta que la carne esté tierna (aproximadamente 1 hora).",
+            "5. Añadir las papas peladas y cortadas, cocinar hasta que estén suaves.",
+            "6. Si se desea, acompañar con yuca cocida.",
+            "7. Servir el seco de cabrito acompañado de arroz y papas o yuca."
+        ],
+        "valor_nutricional": {
+            "porcion": "350g",
+            "calorias": "650 kcal",
+            "proteinas": "35g",
+            "carbohidratos": "60g",
+            "grasas": "30g",
+            "fibra": "5g",
+            "sodio": "500mg"
+        },
+        "adicional": "Este plato es originario del norte del Perú y es conocido por su sabor intenso gracias al uso de la chicha de jora y el cilantro.",
+        "tiempo_preparacion": "1 hora y 30 minutos",
+        "dificultad": "Media",
+        "porciones": "4 personas"
+    }
+]

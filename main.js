@@ -1,73 +1,171 @@
-/*         
-{
-    "id": "ceviche-clasico",
-    "titulo": "Ceviche Clásico",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ceviche_de_corvina_%28Peru%29.jpg/800px-Ceviche_de_corvina_%28Peru%29.jpg",
-    "descripcion": "El ceviche es el plato bandera de la gastronomía peruana. Consiste en pescado fresco marinado en limón, con cebolla, ají, cilantro y choclo.",
-    "preparacion": "Se corta el pescado en cubos, se marina en jugo de limón con cebolla, ají y cilantro. Se sirve con choclo, camote y lechuga.",
-    "adicional": "Es considerado Patrimonio Cultural de la Nación y se celebra el Día Nacional del Ceviche el 28 de junio."
-}
-
-*/
-
-
-
+// Configuración inicial
+const url = "./recetas.json";
 let recetas = [];
 
-fetch("./recetas.json")
-    .then(response => response.json())
-    .then(data =>{
-        recetas = data;
-        addCard(recetas);
-    })
+// Elementos del DOM
+const elementos = {
+    popularContainer: document.querySelector("#contCards"),
+    newContainer: document.querySelector("#newCards"),
+    recipeContainer: document.querySelector(".recipe"),
+    menu: document.querySelector(".nav_menu"),
+    navLinks: document.querySelector(".nav_links"),
+    header: document.querySelector("#header"),
+    footer: document.querySelector("#footer")
+};
 
-const popularContainer = document.querySelector("#contCards");
-const newContainer = document.querySelector("#newCards");
 
+// Inicialización
+document.addEventListener('DOMContentLoaded', () => {
+    // Determinar en qué página estamos
+    const isRecipePage = window.location.pathname.includes('recipes.html');
+    
+    // Cargar datos y ejecutar funciones correspondientes
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            recetas = data;
+            
+            if (isRecipePage) {
+                // Estamos en recipes.html
+                const params = new URLSearchParams(window.location.search);
+                const recetaId = params.get('id');
+                
+                if (recetaId && elementos.recipeContainer) {
+                    pageRecipe(recetas[recetaId]);
+                }
+                
+                // Mostrar recetas populares en recipes.html
+                if (elementos.popularContainer) {
+                    addCard(recetas);
+                }
+            } else {
+                // Estamos en index.html
+                if (elementos.popularContainer) {
+                    addCard(recetas);
+                }
+                if (elementos.newContainer) {
+                    newCard(recetas);
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error cargando las recetas:', error);
+            alert('Hubo un error al cargar las recetas. Por favor, intenta más tarde.');
+        });
+});
 
-function addCard(agregarRecetas){
-
-    popularContainer.innerHTML="";
-    agregarRecetas.forEach(receta => {
-
+// Función para mostrar las recetas populares
+function addCard(agregarRecetas) {
+    if (!elementos.popularContainer) return;
+    
+    elementos.popularContainer.innerHTML = "";
+    agregarRecetas.forEach((receta, index) => {
         const article = document.createElement("article");
         article.classList.add("card_recipes");
-        article.innerHTML= `
-                        <div class="img_container">
-                            <img id="imgCard" src="${receta.imagen}" alt="Img_Card" class="card_img">
-                        </div>
-                        <div class="card_recipes_info">
-                            <h3 class="textCard">${receta.titulo}</h3>
-                            <p class="desCard">${receta.descripcion}</p>
-                            <button class="btn_card"><a href="recipes.html">Ver mas</a></button>
-                        </div>
+        article.innerHTML = `
+            <div class="img_container">
+                <img id="imgCard" src="${receta.imagen}" alt="Img_Card" class="card_img">
+            </div>
+            <div class="card_recipes_info">
+                <h3 class="textCard">${receta.titulo}</h3>
+                <p class="desCard">${receta.descripcion || receta.titulo}</p>
+                <button class="btn_card" data-index="${index}">Ver más</button>
+            </div>
         `;
-        popularContainer.appendChild(article);
-    });
-    newContainer.innerHTML="";
-    agregarRecetas.forEach(receta => {
-
-        const newArticle = document.createElement("div");
-        newArticle.classList.add("card_new")
-        newArticle.innerHTML=`
-                        <img  src="${receta.imagen}" alt="Img_Card" class="card_img">
-                        <div class="card_new_info">
-                            <h3 class="card_title">${receta.titulo}</h3>
-                            <button class="btn_card"><a href="recipes.html">Ver mas</a></button>
-                        </div>
-        `;
-        newContainer.appendChild(newArticle);
+        elementos.popularContainer.appendChild(article);
     });
 
+    // Event listeners para los botones
+    document.querySelectorAll(".btn_card").forEach(button => {
+        button.addEventListener("click", (e) => {
+            const recetaIndex = e.target.getAttribute('data-index');
+            window.location.href = `recipes.html?id=${recetaIndex}`;
+        });
+    });
 }
 
-const menu = document.querySelector(".nav_menu");
-const navLinks = document.querySelector(".nav_links")
+// Función para mostrar las recetas nuevas
+function newCard(nuevasRecetas) {
+    if (!elementos.newContainer) return;
+    
+    elementos.newContainer.innerHTML = "";
+    nuevasRecetas.forEach((receta, index) => {
+        const newArticle = document.createElement("div");
+        newArticle.classList.add("card_new");
+        newArticle.innerHTML = `
+            <img src="${receta.imagen}" alt="${receta.id}" class="card_img">
+            <div class="card_new_info">
+                <h3 class="card_title">${receta.titulo}</h3>
+                <button class="btn_card">
+                    <a href="recipes.html?id=${index}">Ver más</a>
+                </button>
+            </div>
+        `;
+        elementos.newContainer.appendChild(newArticle);
+    });
+}
 
-menu.addEventListener("click", () => {
-    if (navLinks.classList.contains("active")) {
-        navLinks.classList.remove("active")
-    }else
-    navLinks.classList.add("active")
-} )
+// Función para mostrar el detalle de una receta
+function pageRecipe(receta) {
+    if (!elementos.recipeContainer) return;
+    
+    const ingredientesLista = receta.ingredientes.principales.map(ingrediente => 
+        `<li class="recipe_ingredients">${ingrediente.item}: ${ingrediente.cantidad}</li>`
+    ).join("");
 
+    const preparacionLista = receta.preparacion.map(paso => 
+        `<li>${paso}</li>`
+    ).join("");
+
+    elementos.recipeContainer.innerHTML = `
+        <div class="recipe_container">
+            <h2 class="recipe_title">${receta.titulo}</h2>
+            <p class="recipe_description">${receta.descripcion}</p>
+            <div class="container_img">
+                <img class="recipe_img" src="${receta.imagen}" alt="${receta.titulo}">
+            </div>
+            <p class="recipe_aditional">${receta.adicional}</p>
+            <h3>Ingredientes</h3>
+            <ul class="recipe_list">
+                ${ingredientesLista}
+            </ul>
+            <h3>Preparación</h3>
+            <ul class="recipe_prepared">
+                ${preparacionLista}
+            </ul>
+            <table class="recipe_values">
+                <tr>
+                    <td>Calorías:</td>
+                    <td>${receta.valor_nutricional.calorias}</td>
+                </tr>
+                <tr>
+                    <td>Proteínas:</td>
+                    <td>${receta.valor_nutricional.proteinas}</td>
+                </tr>
+                <tr>
+                    <td>Carbohidratos:</td>
+                    <td>${receta.valor_nutricional.carbohidratos}</td>
+                </tr>
+                <tr>
+                    <td>Grasas:</td>
+                    <td>${receta.valor_nutricional.grasas}</td>
+                </tr>
+                <tr>
+                    <td>Fibra:</td>
+                    <td>${receta.valor_nutricional.fibra}</td>
+                </tr>
+                <tr>
+                    <td>Sodio:</td>
+                    <td>${receta.valor_nutricional.sodio}</td>
+                </tr>
+            </table>
+        </div>
+    `;
+}
+
+// Manejo del menú móvil
+if (elementos.menu && elementos.navLinks) {
+    elementos.menu.addEventListener("click", () => {
+        elementos.navLinks.classList.toggle("active");
+    });
+}

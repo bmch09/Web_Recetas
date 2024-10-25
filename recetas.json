@@ -793,5 +793,124 @@
         "tiempo_preparacion": "1 hora y 30 minutos",
         "dificultad": "Media",
         "porciones": "4 personas"
+    },
+    {
+        "id": "chicha-morada",
+        "titulo": "Chicha Morada",
+        "imagen": "/api/placeholder/400/300",
+        "descripcion": "La chicha morada es una bebida tradicional peruana elaborada a base de maíz morado, frutas y especias. Es refrescante y tiene propiedades antioxidantes.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Maíz morado",
+                    "cantidad": "500g"
+                },
+                {
+                    "item": "Piña",
+                    "cantidad": "1 unidad mediana"
+                },
+                {
+                    "item": "Manzana",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Canela en rama",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Clavo de olor",
+                    "cantidad": "4 unidades"
+                },
+                {
+                    "item": "Limón",
+                    "cantidad": "2 unidades"
+                },
+                {
+                    "item": "Azúcar",
+                    "cantidad": "200g"
+                },
+                {
+                    "item": "Agua",
+                    "cantidad": "3 litros"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. Lavar el maíz morado y colocarlo en una olla con agua, canela y clavo de olor.",
+            "2. Hervir por aproximadamente 45 minutos.",
+            "3. Colar el líquido y reservar.",
+            "4. Pelar y cortar la piña y manzana en trozos pequeños.",
+            "5. Agregar las frutas al líquido colado.",
+            "6. Añadir azúcar al gusto y el jugo de limón.",
+            "7. Refrigerar y servir frío."
+        ],
+        "valor_nutricional": {
+            "porcion": "250ml",
+            "calorias": "85 kcal",
+            "proteinas": "0.5g",
+            "carbohidratos": "21g",
+            "grasas": "0g",
+            "fibra": "1g",
+            "sodio": "10mg"
+        },
+        "adicional": "La chicha morada es conocida por sus propiedades antioxidantes y es una bebida sin alcohol apta para toda la familia.",
+        "tiempo_preparacion": "60 minutos",
+        "dificultad": "Fácil",
+        "porciones": "8-10 personas"
+    },
+    {
+        "id": "pisco-sour",
+        "titulo": "Pisco Sour",
+        "imagen": "/api/placeholder/400/300",
+        "descripcion": "El Pisco Sour es el cóctel nacional del Perú, elaborado con pisco, limón, clara de huevo y amargo de Angostura. Es una bebida refrescante y equilibrada.",
+        "ingredientes": {
+            "principales": [
+                {
+                    "item": "Pisco puro",
+                    "cantidad": "100ml"
+                },
+                {
+                    "item": "Limón (jugo)",
+                    "cantidad": "30ml"
+                },
+                {
+                    "item": "Clara de huevo",
+                    "cantidad": "1 unidad"
+                },
+                {
+                    "item": "Jarabe de goma",
+                    "cantidad": "30ml"
+                },
+                {
+                    "item": "Hielo",
+                    "cantidad": "6 cubos"
+                },
+                {
+                    "item": "Amargo de Angostura",
+                    "cantidad": "3 gotas"
+                }
+            ]
+        },
+        "preparacion": [
+            "1. En una coctelera, agregar el pisco, jugo de limón y jarabe de goma.",
+            "2. Añadir la clara de huevo.",
+            "3. Realizar un shake en seco (sin hielo) por 10 segundos.",
+            "4. Agregar el hielo y agitar vigorosamente por 15 segundos más.",
+            "5. Colar en una copa fría.",
+            "6. Decorar con 3 gotas de amargo de Angostura en la espuma."
+        ],
+        "valor_nutricional": {
+            "porcion": "120ml",
+            "calorias": "165 kcal",
+            "proteinas": "4g",
+            "carbohidratos": "15g",
+            "grasas": "0g",
+            "fibra": "0g",
+            "sodio": "30mg"
+        },
+        "adicional": "El Pisco Sour fue creado en Lima en la década de 1920 por Victor Morris. Es considerado Patrimonio Cultural de la Nación.",
+        "tiempo_preparacion": "5 minutos",
+        "dificultad": "Media",
+        "porciones": "1 persona"
     }
 ]

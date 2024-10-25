@@ -39,25 +39,21 @@ body{
 }
 
 .container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 4rem;
 }
 
 header{
+    width: 100%;
     min-height: 15vh;
     background-color: #F3F4F6;
-    display: flex;
-    justify-content: center;
     height: 100%;
+    padding: 2rem 0;
 }
 
 .nav{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem 0;
-    width: 100%;
     position: relative;
 }
 
@@ -125,14 +121,13 @@ header{
 
 main{
     margin: 2rem 0;
-    padding: 0 2rem;
+    
 }
 
 .main_content{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 1.5rem;
 }
 
 .hero h2{
@@ -184,14 +179,14 @@ main{
 
 .popular_container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fill, minmax(13rem,1fr));
 }
 
 .card_recipes{
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 1rem;
-    background-color: #F3F4F6;
+    background-color: #c9cacc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,13 +222,18 @@ main{
 }
 
 .card_recipes_info button{
-    padding: .6rem;
+    padding:  .3rem;
+    margin: 0 2rem;
     border: none;
     border-radius: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     font-size: clamp(.3rem, 2vw, 1rem);
     cursor: pointer;
-    text-transform: uppercase;
+}
+
+.card_recipes_info button:hover{
+
+    background-color: #A8D5BA;
 }
 
 
@@ -253,7 +253,7 @@ main{
 
 .new_container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
     gap: 2rem;
 }
 
@@ -287,10 +287,11 @@ main{
 }
 
 .card_new_info button{
-    padding: .4rem;
+    padding: .2rem 1rem;
     border: none;
     border-radius: .6rem;
-    font-weight: 600;
+    font-weight: 500;
+    background-color: #A8D5BA;
 }
 
 .btn_card a{
@@ -405,96 +406,3 @@ footer{
     font-size: 1.2rem;
 }
 
-@media screen and (max-width:1100px) {
-    .container{
-        margin: 0;
-    }
-    .popular_container{
-        gap: 1rem;
-    }
-    .new_container{
-        gap: 1rem;
-    }
-    .nav_links ul{
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width:980px) {
-    .popular_container{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 1rem;
-    }
-
-    .nav_menu{
-        display: block;
-        font-size: 2.5rem;
-    }
-    .new_container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
-    }
-    
-    .nav_links{
-        display: none;
-    }
-
-    .active{
-        display: block;
-    }
-
-    .nav_links_container{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        background-color: #F3F4F6;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        top: 15vh;
-    }
-
-    .nav_links a{
-        margin: 2rem;
-    }
-
-
-}
-
-@media screen and (max-width:620px){
-    .popular_container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .new_container{
-        display: grid;
-        gap: 1rem;
-    }
-
-    .card_recipes_info p{
-        height: 4.5rem;
-    }
-
-
-    
-}
-
-@media screen and (max-width:500px){
-    .popular_container{
-        display: grid;
-
-    }
-    .new_container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin: 2rem;
-    }
-    .card_recipes_info h3{
-        height: 3rem;
-    }
-    .card_recipes_info p{
-        font-size: .8rem;
-    }
-}

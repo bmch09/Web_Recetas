@@ -37,10 +37,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.container{
-}
-
 header{
     width: 100%;
     min-height: 15vh;

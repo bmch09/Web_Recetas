@@ -11,7 +11,9 @@ const elementos = {
     navLinks: document.querySelector(".nav_links"),
     header: document.querySelector("#header"),
     footer: document.querySelector("#footer"),
-    mainContent: document.querySelector(".main_content")
+    mainContent: document.querySelector(".main_content"),
+    recipesPopularContent: document.querySelector(".popular_recipes"),
+    recipesNewContent: document.querySelector(".new_recipes")
 };
 
 
@@ -156,6 +158,7 @@ function newCard(nuevasRecetas) {
 
 // Función para mostrar el detalle de una receta
 function pageRecipe(receta) {
+    mostrarCategorias();
     if (!elementos.recipeContainer) return;
     
     const ingredientesLista = receta.ingredientes.principales.map(ingrediente => 
@@ -224,16 +227,15 @@ if (elementos.menu && elementos.navLinks) {
 
 navWeb();
 footerWeb();
+mostrarCategorias();
 
-let comida = [];
-const navCategoria = document.querySelectorAll(".links");
 
+function mostrarCategorias(){
+    let comida = [];
+    const navCategoria = document.querySelectorAll(".links");
 navCategoria.forEach((cate) => {
     cate.addEventListener("click", () => {
-        if(elementos.mainContent.classList.contains("main_content")){
-            elementos.mainContent.classList.remove("main_content");
-            elementos.mainContent.classList.add("active");
-        }
+
         const nomCategoria = cate.textContent;
         fetch(url)
             .then(response => response.json())
@@ -242,15 +244,29 @@ navCategoria.forEach((cate) => {
                 // Filtra las recetas que pertenecen a la categoría clickeada
                 const recetasFiltradas = comida.filter(receta => receta.categoria === nomCategoria);
                 if (recetasFiltradas.length > 0) {
-                    // Llama a la función para crear tarjetas solo para las recetas de la categoría seleccionada
+
+                    if(elementos.mainContent.classList.contains("main_content")){
+                        elementos.mainContent.classList.remove("main_content");
+                        elementos.mainContent.classList.add("disable");
+                        elementos.recipesPopularContent.classList.add("popular_recipes")
+                        elementos.recipesPopularContent.classList.remove("disable")
+                        elementos.recipesNewContent.classList.add("new_recipes")
+                        elementos.recipesNewContent.classList.remove("disable")
+                    }
                     newCard(recetasFiltradas);
                     addCard(recetasFiltradas)
+
                 } else {
-                    const main = document.querySelector(".main");
-                    main.innerHTML=`<h2 class="popular_title">No se encontraron recetas para esta categoria U.U</h2>`
+                    elementos.mainContent.classList.add("main_content");
+                    elementos.mainContent.classList.remove("disable");
+                    elementos.recipesPopularContent.classList.remove("popular_recipes")
+                    elementos.recipesPopularContent.classList.add("disable")
+                    elementos.recipesNewContent.classList.remove("new_recipes")
+                    elementos.recipesNewContent.classList.add("disable")
+                    elementos.mainContent.innerHTML=`<h2 class="popular_title">No se encontraron recetas para esta categoria U.U</h2>`
                 }
             })
             .catch(error => console.error("Error al obtener los datos o en la categoría:", error));
     });
 });
-
+}

@@ -44,9 +44,9 @@ body{
 
 .container{
     max-width: 1200px;
-    width: 100%;
-    margin: 0 2rem;
-    padding: 0 1rem;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
 }
 header{
     width: 100%;
@@ -415,6 +415,9 @@ footer{
     .main{
         text-align: center;
     }
+    .main_content{
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width:750px ) {
@@ -422,11 +425,17 @@ footer{
         flex-direction: column;
         text-align: center;
     }
+    .new_recipes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:400px ) {
     .nav{
         flex-direction: column;
+        gap: 1rem 0;
     }
     .main_content{
         flex-direction: column;

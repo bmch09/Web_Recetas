@@ -246,7 +246,8 @@ navCategoria.forEach((cate) => {
                     newCard(recetasFiltradas);
                     addCard(recetasFiltradas)
                 } else {
-                    console.log(`La categoría "${nomCategoria}" no se encontró en el array.`);
+                    const main = document.querySelector(".main");
+                    main.innerHTML=`<h2 class="popular_title">No se encontraron recetas para esta categoria U.U</h2>`
                 }
             })
             .catch(error => console.error("Error al obtener los datos o en la categoría:", error));

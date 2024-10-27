@@ -1,21 +1,5 @@
-<<<<<<< HEAD
 // Configuración inicial
 const url = "./recetas.json";
-=======
-/*         
-{
-    "id": "ceviche-clasico",
-    "titulo": "Ceviche Clásico",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ceviche_de_corvina_%28Peru%29.jpg/800px-Ceviche_de_corvina_%28Peru%29.jpg",
-    "descripcion": "El ceviche es el plato bandera de la gastronomía peruana. Consiste en pescado fresco marinado en limón, con cebolla, ají, cilantro y choclo.",
-    "preparacion": "Se corta el pescado en cubos, se marina en jugo de limón con cebolla, ají y cilantro. Se sirve con choclo, camote y lechuga.",
-    "adicional": "Es considerado Patrimonio Cultural de la Nación y se celebra el Día Nacional del Ceviche el 28 de junio."
-}
-
-*/
-
-
->>>>>>> refs/remotes/origin/main
 let recetas = [];
 
 // Elementos del DOM
@@ -26,8 +10,53 @@ const elementos = {
     menu: document.querySelector(".nav_menu"),
     navLinks: document.querySelector(".nav_links"),
     header: document.querySelector("#header"),
-    footer: document.querySelector("#footer")
+    footer: document.querySelector("#footer"),
+    mainContent: document.querySelector(".main_content")
 };
+
+
+function navWeb(){
+    const nav =document.createElement("nav");
+    nav.classList.add("nav")
+    nav.innerHTML=`
+                        <div class="nav_logo">
+                    <h1><a href="index.html">Nombre</a></h1>
+                </div>
+                <div class="nav_links">
+                    <div class="nav_links_container">
+                        <a class="links">Recetas</a>
+                        <a class="links">Postre</a>
+                        <a class="links">Bebidas</a>
+                        <a class="links">Categorias</a>
+                    </div>
+                </div>
+                <div class="nav_search">
+                    <input type="text" placeholder="Buscador">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="nav_menu"><i class="fa-solid fa-bars"></i></div>
+    `
+    elementos.header.appendChild(nav)
+}
+
+function footerWeb(){
+    const footerDiv = document.createElement("div");
+    footerDiv.classList.add("footer_content")
+    footerDiv.innerHTML=`
+                        <div class="info_footer">
+                <h2 class="title_footer">Nombre</h2>
+                <hr>
+                <span>Todos los derechos reservados ©</span>
+                </div>
+                <div class="icon_footer">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+    `
+    elementos.footer.appendChild(footerDiv)
+}
+
 
 
 // Inicialización
@@ -58,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Estamos en index.html
                 if (elementos.popularContainer) {
                     addCard(recetas);
+                    
                 }
                 if (elementos.newContainer) {
                     newCard(recetas);
@@ -70,6 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
+//  Filtrar Por categoria
+
+
 // Función para mostrar las recetas populares
 function addCard(agregarRecetas) {
     if (!elementos.popularContainer) return;
@@ -78,7 +111,6 @@ function addCard(agregarRecetas) {
     agregarRecetas.forEach((receta, index) => {
         const article = document.createElement("article");
         article.classList.add("card_recipes");
-<<<<<<< HEAD
         article.innerHTML = `
             <div class="img_container">
                 <img id="imgCard" src="${receta.imagen}" alt="Img_Card" class="card_img">
@@ -90,33 +122,6 @@ function addCard(agregarRecetas) {
             </div>
         `;
         elementos.popularContainer.appendChild(article);
-=======
-        article.innerHTML= `
-                        <div class="img_container">
-                            <img id="imgCard" src="${receta.imagen}" alt="Img_Card" class="card_img">
-                        </div>
-                        <div class="card_recipes_info">
-                            <h3 class="textCard">${receta.titulo}</h3>
-                            <p class="desCard">${receta.descripcion}</p>
-                            <button class="btn_card"><a href="#">Ver mas</a></button>
-                        </div>
-        `;
-        popularContainer.appendChild(article);
-    });
-    newContainer.innerHTML="";
-    agregarRecetas.forEach(receta => {
-
-        const newArticle = document.createElement("div");
-        newArticle.classList.add("card_new")
-        newArticle.innerHTML=`
-                        <img  src="${receta.imagen}" alt="Img_Card" class="card_img">
-                        <div class="card_new_info">
-                            <h3 class="card_title">${receta.titulo}</h3>
-                            <button class="btn_card"><a href="#">${showRecipe()}Ver mas</a></button>
-                        </div>
-        `;
-        newContainer.appendChild(newArticle);
->>>>>>> refs/remotes/origin/main
     });
 
     // Event listeners para los botones
@@ -157,7 +162,6 @@ function pageRecipe(receta) {
         `<li class="recipe_ingredients">${ingrediente.item}: ${ingrediente.cantidad}</li>`
     ).join("");
 
-<<<<<<< HEAD
     const preparacionLista = receta.preparacion.map(paso => 
         `<li>${paso}</li>`
     ).join("");
@@ -178,6 +182,7 @@ function pageRecipe(receta) {
             <ul class="recipe_prepared">
                 ${preparacionLista}
             </ul>
+            <h3>Valor Nutricional</h3>
             <table class="recipe_values">
                 <tr>
                     <td>Calorías:</td>
@@ -213,56 +218,38 @@ if (elementos.menu && elementos.navLinks) {
     elementos.menu.addEventListener("click", () => {
         elementos.navLinks.classList.toggle("active");
     });
-=======
-
-const main = document.querySelector(".main");
-const btnCard = document.querySelectorAll(".btn_card")
-
-function showRecipe(){
-    btnCard.addEventListener("click", () => {
-        main.innerHTML = "";
-        main.appendChild=`<section class="recipe">
-                <div class="recipe_container">
-                    <h2 class="recipe_title">Titulo</h2>
-                    <p class="recipe_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed illum assumenda dolor, 
-                        vitae, eos nihil dignissimos, animi unde voluptate eius temporibus quaerat placeat repudiandae nam impedit quod. Molestias, itaque maiores.</p>
-                    <div class="container_img">
-                        <img class="recipe_img" src="https://via.placeholder.com/800x600" alt="">
-                    </div>
-                    <p class="recipe_aditional">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, esse a harum vero quaerat distinctio, r
-                        epellat, aliquid velit ratione assumenda minima nostrum magni tenetur illum qui iusto magnam voluptatibus perspiciatis.</p>
-                    <h3>Ingredientes</h3>
-                    <ul class="recipe_list">
-                        <li class="recipe_ingredients">Ingrediente</li>
-                        <li class="recipe_ingredients">Ingrediente</li>
-                        <li class="recipe_ingredients">Ingrediente</li>
-                        <li class="recipe_ingredients">Ingrediente</li>
-                        <li class="recipe_ingredients">Ingrediente</li>
-                        <li class="recipe_ingredients">Ingrediente</li>
-                        <li class="recipe_ingredients">Ingrediente</li>
-
-                    </ul>
-                    <h3>Preparacion</h3>
-                    <p class="recipe_prepared">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ex sapiente totam consectetur molestiae eius accusamus dignissimos vitae iusto. Placeat quam architecto earum soluta, et eveniet voluptatem fuga praesentium perferendis?
-                    Facilis excepturi ea molestiae doloremque. Tempore aliquid ullam enim adipisci non iure doloribus corrupti nostrum ab fuga culpa animi, dolores ex ducimus facilis. Corrupti, voluptas sequi odio laboriosam illum consequuntur!
-                    Excepturi ipsum dignissimos veniam molestias odio aut molestiae vel esse ea culpa id ipsa totam, voluptatibus deserunt maiores eius. Accusantium cupiditate nostrum tempora quia unde, eligendi atque laboriosam tempore dolores.</p>
-                    <h3>Valor Nutricional</h3>
-                    <table class="recipe_values">
-                        <tr>
-                            <td>calorias</td>
-                            <td>20kg</td>
-                        </tr>
-                        <tr>
-                            <td>calorias</td>
-                            <td>20kg</td>
-                        </tr>
-                        <tr>
-                            <td>calorias</td>
-                            <td>20kg</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>`
-    })
->>>>>>> refs/remotes/origin/main
 }
+
+
+
+navWeb();
+footerWeb();
+
+let comida = [];
+const navCategoria = document.querySelectorAll(".links");
+
+navCategoria.forEach((cate) => {
+    cate.addEventListener("click", () => {
+        if(elementos.mainContent.classList.contains("main_content")){
+            elementos.mainContent.classList.remove("main_content");
+            elementos.mainContent.classList.add("active");
+        }
+        const nomCategoria = cate.textContent;
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                comida = data;
+                // Filtra las recetas que pertenecen a la categoría clickeada
+                const recetasFiltradas = comida.filter(receta => receta.categoria === nomCategoria);
+                if (recetasFiltradas.length > 0) {
+                    // Llama a la función para crear tarjetas solo para las recetas de la categoría seleccionada
+                    newCard(recetasFiltradas);
+                    addCard(recetasFiltradas)
+                } else {
+                    console.log(`La categoría "${nomCategoria}" no se encontró en el array.`);
+                }
+            })
+            .catch(error => console.error("Error al obtener los datos o en la categoría:", error));
+    });
+});
+
